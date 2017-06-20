@@ -21,7 +21,7 @@
 import bookService from '../services/book.service8'
 
 export default {
-  name: 'book-list',
+  name: 'pepo',
   created() {
     bookService.getBooks().then(books => {
       // console.log(books);
