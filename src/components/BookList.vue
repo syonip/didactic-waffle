@@ -20,7 +20,7 @@
 <script>
 import bookService from '../services/book.service2'
 export default {
-  name: 'book-list',
+  name: 'pook-list',
   created() {
     bookService.getBooks().then(books => {
       // console.log(books);
