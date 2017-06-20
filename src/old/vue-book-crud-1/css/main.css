@@ -1,0 +1,41 @@
+body {
+    background: lightcoral;
+}
+
+.book-preview {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+    background: lightgray;
+    text-align: center;
+}
+
+
+
+.popup {
+    background: gold;
+    padding: 10px;
+    border-radius: 1em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.book-edit {
+    background: lightgoldenrodyellow;
+}
+
+.book-filter {
+    background-color: chocolate;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+.cart {
+    background-color: lightseagreen;
+    padding: 10px;
+    border-radius: 1em;
+}
