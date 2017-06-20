@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import bookService from '../services/book.service'
+import bookService from '../services/book.service1'
 export default {
   name: 'book-list',
   created() {
