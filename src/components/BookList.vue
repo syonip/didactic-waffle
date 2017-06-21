@@ -5,6 +5,7 @@
     <h2>We have {{books.length}} Books</h2>
     <button @click="isCreateMode=true">+</button>
     <ul>
+      <cart>
       <book-preview v-for="currBook in booksToShow" :key="currBook.id" @click.native="selectBook(currBook)" @edit="editBook(currBook)" @delete="deleteBook(currBook)" @add-to-cart="addToCart(currBook)" :book="currBook">
       </book-preview>
     </ul>
