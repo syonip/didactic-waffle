@@ -2,24 +2,14 @@
   <section v-if="books">
   
     <book-filter @set-filter="setFilter"></book-filter>
-    <h2>We have {{books.length}} Books</h2>
-    <button @click="isCreateMode=true">+</button>
-    <ul>
-      <cart>
-      <book-preview v-for="currBook in booksToShow" :key="currBook.id" @click.native="selectBook(currBook)" @edit="editBook(currBook)" @delete="deleteBook(currBook)" @add-to-cart="addToCart(currBook)" :book="currBook">
-      </book-preview>
-    </ul>
-    <book-details v-if="selectedBook" @close="resetSelected" @next="selectNext" :book="selectedBook">
-    </book-details>
-  
-    <book-edit v-if="editedBook || isCreateMode" :book="editedBook" @save="saveBook">
+    <h2>We h-if="editedBook || isCreateMode" :book="editedBook" @save="saveBook">
     </book-edit>
   
   </section>
 </template>
 
 <script>
-import bookService from '../services/book.service8'
+import BookService from '../services/book.service8'
 
 export default {
   name: 'book-list',
