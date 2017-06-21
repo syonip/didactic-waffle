@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import bookService from '../services/book.service8'
+import BookService from '../services/book.service8'
 
 export default {
   name: 'book-list',
